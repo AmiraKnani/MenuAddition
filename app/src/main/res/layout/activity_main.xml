@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <CheckBox
+        android:text="@string/pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/checkBoxP"
+        />
+
+    <CheckBox
+        android:text="@string/Hamburger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:id="@+id/checkBoxH"
+        android:layout_below="@id/checkBoxP"
+        />
+
+    <CheckBox
+        android:text="@string/BoissonG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:id="@+id/checkBoxBG"
+        android:layout_below="@id/checkBoxH"
+        />
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="57dp"
+        android:layout_toRightOf="@id/checkBoxH"
+        android:text="Addition"
+        android:layout_below="@id/checkBoxBG"
+        />
+</RelativeLayout>
